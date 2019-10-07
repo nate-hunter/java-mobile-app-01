@@ -1,6 +1,7 @@
 package com.njh.app.ws.shared.dto;
 
 import java.io.Serializable;
+import java.util.List;
 
 public class UserDto implements Serializable {
 //    private static final long serialVersionUID = 4865903039190150223L;
@@ -15,6 +16,15 @@ public class UserDto implements Serializable {
     private String encryptedPassword;
     private String emailVerificationToken;
     private Boolean emailVerificationStatus = false;
+    private List<TeamDto> teams;
+
+    public List<TeamDto> getTeams() {
+        return teams;
+    }
+
+    public void setTeams(List<TeamDto> teams) {
+        this.teams = teams;
+    }
 
     public long getId() {
         return id;

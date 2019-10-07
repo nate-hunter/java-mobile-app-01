@@ -1,26 +1,11 @@
-# PROJECT DEMO
-
-- TERMS / CONCEPTS
-    - autowired
-    - beans
-        - What is a _bean_?
-        - Why `BeanUtils.copyProperties()`?
-    - SerialVersionId
-        - What is `serialVersionUID` in `UserDto` Class?
-    - enum
-        - What is an _enum_ exactly?
-        - Why is `ErrorMessages` an _enum_?
-    - interfaces
-        - What is an _interface_?
-        - What is `UserService` an _interface_?
-    - pagination
-        - What is _pagination_?
-    - jar file vs. war file
-        - why would we want/not want apache tomcat built in (jar file)
-    - sudo
-        
-        
-  ## Maven:
+# PLAN FOR APP:
+- User signs up/log in/log out
+- User creates a profile
+    - Selects a favorite NBA team
+- User can view data visualizations of all NBA teams
+- User can edit/update team
+    
+## Maven:
 $ cd "C:\Java-nh\Projects\java-mobile-app\20190924\mobile-app-ws"
 $ ls
 $ mvn install
@@ -108,7 +93,7 @@ $ mysql -u root -p
 */* CAN NOW RUN COMMANDS, eg:
 mysql> show databases;
 mysql> create database mobile_app;
-mysql> create user 'njh'@'localhost' identified by 'NJHawsmysql10*';
+mysql> create user 'njh'@'localhost' identified by 'NJHawsmy...';
 mysql> grant all privileges on mobile_app.* to 'njh';
 mysql> flush privileges;
 mysql> exit
@@ -122,9 +107,6 @@ mysql> show databases;
 $ mvn install
 
 
-
-
-ssh -i MobileAppEC2ServerBean.pem ec2-user@ec2-18-221-45-173.us-east-2.compute.amazonaws.com
 
 
 // THE END //

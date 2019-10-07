@@ -1,10 +1,13 @@
 package com.njh.app.ws.ui.model.request;
 
+import java.util.List;
+
 public class UserDetailsRequestModel {
     private String firstName;
     private String lastName;
     private String email;
     private String password;
+    private List<TeamRequestModel> teams;
 
     public String getFirstName() {
         return firstName;
@@ -36,5 +39,13 @@ public class UserDetailsRequestModel {
 
     public void setPassword(String password) {
         this.password = password;
+    }
+
+    public List<TeamRequestModel> getTeams() {
+        return teams;
+    }
+
+    public void setTeams(List<TeamRequestModel> teams) {
+        this.teams = teams;
     }
 }
